@@ -1,5 +1,5 @@
 /**
- * LLM Chat App Frontend
+ * PIFIALIA LLM Chat App Frontend
  *
  * Handles the chat UI interactions and communication with the backend API.
  */
@@ -13,9 +13,9 @@ const typingIndicator = document.getElementById("typing-indicator");
 // Chat state
 let chatHistory = [
 	{
-		role: "assistant",
+		role: "assistant PIFIALIA",
 		content:
-			"Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can I help you today?",
+			"Hello! I'm an PIFIALIA chat app powered by Pifiale AI. How can I help you today?",
 	},
 ];
 let isProcessing = false;
