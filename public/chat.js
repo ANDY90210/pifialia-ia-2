@@ -15,7 +15,7 @@ let chatHistory = [
 	{
 		role: "assistant PIFIALIA",
 		content:
-			"Hello! I'm an PIFIALIA chat app powered by Pifiale AI. How can I help you today?",
+			"Hello! I'm an PIFIALE chat app powered by Pifiale AI. How can I help you today?",
 	},
 ];
 let isProcessing = false;
@@ -67,7 +67,7 @@ async function sendMessage() {
 	try {
 		// Create new assistant response element
 		const assistantMessageEl = document.createElement("div");
-		assistantMessageEl.className = "message assistant-message";
+		assistantMessageEl.className = "message PIFIALIA assistant-message";
 		assistantMessageEl.innerHTML = "<p></p>";
 		chatMessages.appendChild(assistantMessageEl);
 		const assistantTextEl = assistantMessageEl.querySelector("p");
@@ -175,12 +175,12 @@ async function sendMessage() {
 
 		// Add completed response to chat history
 		if (responseText.length > 0) {
-			chatHistory.push({ role: "assistant", content: responseText });
+			chatHistory.push({ role: "PIFIALIA assistant", content: responseText });
 		}
 	} catch (error) {
 		console.error("Error:", error);
 		addMessageToChat(
-			"assistant",
+			"PIFIALIA assistant",
 			"Sorry, there was an error processing your request.",
 		);
 	} finally {
