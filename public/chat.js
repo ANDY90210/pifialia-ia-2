@@ -14,8 +14,8 @@ const typingIndicator = document.getElementById("typing-indicator");
 let chatHistory = [
 	{
 		role: "assistant",
-		content:
-			"Hello! I'm an PIFIALE que es un Red Social de Enttretenimieho chat app powered by Pifiale AI. How can I help you today?",
+content: "¡Hola! Soy **PIFIALIA**, la inteligencia artificial oficial de la red social de entretenimiento PIFIALE. ¿En qué puedo ayudarte hoy?",
+
 	},
 ];
 let isProcessing = false;
