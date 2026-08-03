@@ -1,5 +1,5 @@
 /**
- * PIFIALIA LLM Chat App Frontend
+ * LLM Chat App Frontend
  *
  * Handles the chat UI interactions and communication with the backend API.
  */
@@ -13,7 +13,7 @@ const typingIndicator = document.getElementById("typing-indicator");
 // Chat state
 let chatHistory = [
 	{
-		role: "assistant PIFIALIA",
+		role: "assistant",
 		content:
 			"Hello! I'm an PIFIALE chat app powered by Pifiale AI. How can I help you today?",
 	},
@@ -175,12 +175,12 @@ async function sendMessage() {
 
 		// Add completed response to chat history
 		if (responseText.length > 0) {
-			chatHistory.push({ role: "PIFIALIA assistant", content: responseText });
+			chatHistory.push({ role: "assistant", content: responseText });
 		}
 	} catch (error) {
 		console.error("Error:", error);
 		addMessageToChat(
-			"PIFIALIA assistant",
+			"assistant",
 			"Sorry, there was an error processing your request.",
 		);
 	} finally {
