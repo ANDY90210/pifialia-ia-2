@@ -15,7 +15,7 @@ let chatHistory = [
 	{
 		role: "assistant",
 		content:
-			"Hello! I'm an PIFIALE chat app powered by Pifiale AI. How can I help you today?",
+			"Hello! I'm an PIFIALE que es un Red Social de Enttretenimieho chat app powered by Pifiale AI. How can I help you today?",
 	},
 ];
 let isProcessing = false;
@@ -67,7 +67,7 @@ async function sendMessage() {
 	try {
 		// Create new assistant response element
 		const assistantMessageEl = document.createElement("div");
-		assistantMessageEl.className = "message PIFIALIA assistant-message";
+		assistantMessageEl.className = "message LLM assistant-message";
 		assistantMessageEl.innerHTML = "<p></p>";
 		chatMessages.appendChild(assistantMessageEl);
 		const assistantTextEl = assistantMessageEl.querySelector("p");
